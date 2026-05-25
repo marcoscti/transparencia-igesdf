@@ -613,8 +613,6 @@ function transparencia_igesdf_shortcode($atts)
                     </div>
 
                 </div>
-            <?php else: ?>
-                <p>Nenhum conteúdo encontrado para o ano de <?php echo esc_html($ano->name); ?>.</p>
             <?php endif; ?>
 
             <?php wp_reset_postdata(); ?>
