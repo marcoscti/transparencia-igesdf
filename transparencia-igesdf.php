@@ -93,7 +93,7 @@ function transparencia_igesdf_registrar_estruturas()
         ],
 
         'rewrite' => [
-            'slug'       => 'transparencia',
+            'slug'       => 'transparencia-iges',
             'with_front' => false,
         ],
 
@@ -510,10 +510,11 @@ function transparencia_igesdf_shortcode($atts)
     |--------------------------------------------------------------------------
     */
 
+    // Busca o pai tanto no CPT quanto em Páginas normais para evitar erro de "Hierarquia não encontrada"
     $pagina_pai = get_page_by_path(
-        sanitize_title($atts['hierarquia']),
+        $atts['hierarquia'],
         OBJECT,
-        'transparencia_igesdf'
+        ['transparencia_igesdf', 'page']
     );
 
     if (!$pagina_pai) {
