@@ -1,0 +1,90 @@
+a.transparencia-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: #c5d32b;
+  color: #fff !important;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.transparencia-download:hover {
+  opacity: 0.9;
+}
+
+.transparencia-tabela {
+  overflow: auto;
+  margin-top: 20px;
+}
+.transparencia-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transparencia-item {
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.transparencia-toggle {
+  width: 100% !important;
+  border: none;
+  color: #fff;
+  padding: 16px 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 1.2rem!important;
+  font-weight: 600!important;
+}
+
+.transparencia-content {
+  display: none;
+  padding: 20px;
+  background: #fff;
+}
+
+.transparencia-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.transparencia-content li {
+  margin-bottom: 10px;
+}
+
+.transparencia-content a {
+  text-decoration: none;
+}
+
+.transparencia-content a:hover {
+  text-decoration: underline;
+}
+
+.transparencia-item.active .transparencia-content {
+  display: block;
+}
+
+.transparencia-item.active .transparencia-icon {
+  transform: rotate(180deg);
+}
+
+.transparencia-icon {
+  transition: 0.2s;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transparencia-arquivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
