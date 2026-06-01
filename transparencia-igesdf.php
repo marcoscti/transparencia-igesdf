@@ -78,12 +78,14 @@ function transparencia_igesdf_registrar_estruturas()
         ],
 
         'public'              => true,
+        'show_ui'             => true,
+        'show_in_nav_menus'   => true,
         'publicly_queryable'  => true,
         'exclude_from_search' => false,
-        'has_archive'         => false,
+        'has_archive'         => true,
         'hierarchical'        => true,
         'menu_icon'           => 'dashicons-chart-bar',
-
+        'show_in_rest'        => true,
         'supports' => [
             'title',
             'editor',
@@ -96,8 +98,6 @@ function transparencia_igesdf_registrar_estruturas()
             'slug'       => 'transparencia-iges',
             'with_front' => false,
         ],
-
-        'show_in_rest' => true,
     ]);
 
 
